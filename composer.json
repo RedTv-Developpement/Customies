@@ -1,0 +1,16 @@
+{
+    "name": "customiesdevs/customies",
+    "description": "Modding Minecraft For PocketMine-MP (Minecraft Bedrock Edition)",
+    "autoload": {
+        "psr-4": {
+            "customiesdevs\\customies\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "DenielWorld and TwistedAsylumMC - Add composer by RedTv"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
