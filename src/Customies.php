@@ -6,8 +6,15 @@ namespace customiesdevs\customies;
 use customiesdevs\customies\block\CustomiesBlockFactory;
 use pocketmine\plugin\PluginBase;
 use pocketmine\scheduler\ClosureTask;
+use pocketmine\utils\SingletonTrait;
 
 final class Customies extends PluginBase {
+
+	use SingletonTrait;
+
+	public function onLoad(): void {
+		self::setInstance($this);
+	}
 
 	public function onEnable(): void {
 		$this->getServer()->getPluginManager()->registerEvents(new CustomiesListener(), $this);
