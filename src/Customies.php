@@ -9,7 +9,7 @@ use pocketmine\scheduler\ClosureTask;
 
 final class Customies extends PluginBase {
 
-	protected function onEnable(): void {
+	public function onEnable(): void {
 		$this->getServer()->getPluginManager()->registerEvents(new CustomiesListener(), $this);
 
 		$cachePath = $this->getDataFolder() . "idcache";
